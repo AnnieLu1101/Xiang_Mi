@@ -99,7 +99,7 @@
 
 /* 頭牌榜-hover背景動態花邊*/
 .hot_product_bg{
-    background-image: url('/image/flower_bg.svg');
+    background-image: url('image/flower_bg.svg');
     background-size:0%;
     width: 16em;
     height: 23em;
@@ -148,7 +148,7 @@
 /* 狀元 */
 .champion{
     transition: all 0.3s;
-    background-image: url('/image/flower-god/product-group/product-group_4.jpg');
+    background-image: url('image/flower-god/product-group/product-group_4.jpg');
     width: 16em;
     height: 23em;
     background-repeat: no-repeat;
@@ -166,14 +166,14 @@
 }
 
 .champion:hover{
-    background-image: url('/image/flower-god/product-no-bg/product-no-bg-4.png');
+    background-image: url('image/flower-god/product-no-bg/product-no-bg-4.png');
     background-size:contain;
 }
 
 /* 榜眼 */
 .second{
     transition: all 0.3s;
-    background-image: url('/image/flower-god/product-group/product-group_9.jpg');
+    background-image: url('image/flower-god/product-group/product-group_9.jpg');
     width: 16em;
     height: 23em;
     background-repeat: no-repeat;
@@ -190,14 +190,14 @@
 }
 
 .second:hover{
-    background-image: url('/image/flower-god/product-no-bg/product-no-bg_9.png');
+    background-image: url('image/flower-god/product-no-bg/product-no-bg_9.png');
     background-size:contain;
 }
 
 /* 探花 */
 .third{
     transition: all 0.3s;
-    background-image: url('/image/flower-god/product-group/product-group_3.jpg');
+    background-image: url('image/flower-god/product-group/product-group_3.jpg');
     width: 16em;
     height: 23em;
     background-repeat: no-repeat;
@@ -213,7 +213,7 @@
 }
 
 .third:hover{
-    background-image: url('/image/flower-god/product-no-bg/product-no-bg-3.png');
+    background-image: url('image/flower-god/product-no-bg/product-no-bg-3.png');
     background-size:contain;
 }
 
@@ -285,7 +285,7 @@
     margin: auto;
     justify-content: center;
     align-items: center;
-    background-image: url(/image/season_recommend_bg.svg);
+    background-image: url(image/season_recommend_bg.svg);
     background-color: rgba(255, 234, 233, 0.9);
     filter: drop-shadow(4px 4px 3px rgba(202, 68, 68, 0.2));
     border-radius: 1em;
@@ -488,7 +488,7 @@
         margin: auto;
         justify-content: center;
         align-items: center;
-        background-image: url(/image/season_recommend_bg_phone.svg);
+        background-image: url(image/season_recommend_bg_phone.svg);
         background-color: rgba(255, 234, 233, 0.9);
         filter: drop-shadow(4px 4px 3px rgba(202, 68, 68, 0.2));
         border-radius: 1em;
