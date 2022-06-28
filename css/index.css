@@ -39,7 +39,7 @@
     align-items: center;
     display:flex;
     justify-content: center;
-    background-image: url(image/Border_bg.svg);
+    background-image: url(../image/Border_bg.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -54,7 +54,7 @@
 
 .festival_limited_img_web{
     transition: all 0.5s;
-    background-image: url('image/festival_limited/product-box.png');
+    background-image: url('../image/festival_limited/product-box.png');
     width: 20em;
     height: 30em;
     background-repeat: no-repeat;
@@ -72,7 +72,7 @@
 }
 
 .festival_limited_img_web:hover{
-    background-image: url('image/festival_limited/product-group-no-bg.png');
+    background-image: url('../image/festival_limited/product-group-no-bg.png');
     background-size:contain;
     background-position:top center;
     transform:scale(1.15);
@@ -128,7 +128,7 @@
 /* 狀元 */
 .champion{
     transition: all 0.3s;
-    background-image: url('image/flower-god/product-group/product-group_4.jpg');
+    background-image: url('../image/flower-god/product-group/product-group_4.jpg');
     width: 16em;
     height: 23em;
     background-repeat: no-repeat;
@@ -145,14 +145,14 @@
 }
 
 .champion:hover{
-    background-image: url('image/flower-god/product-no-bg/product-no-bg-4.png');
+    background-image: url('../image/flower-god/product-no-bg/product-no-bg-4.png');
     background-size:contain;
 }
 
 /* 榜眼 */
 .second{
     transition: all 0.3s;
-    background-image: url('image/flower-god/product-group/product-group_9.jpg');
+    background-image: url('../image/flower-god/product-group/product-group_9.jpg');
     width: 16em;
     height: 23em;
     background-repeat: no-repeat;
@@ -169,7 +169,7 @@
 }
 
 .second:hover{
-    background-image: url('image/flower-god/product-no-bg/product-no-bg_9.png');
+    background-image: url('../image/flower-god/product-no-bg/product-no-bg_9.png');
     background-size:contain;
 }
 
@@ -177,7 +177,7 @@
 /* 探花 */
 .third{
     transition: all 0.3s;
-    background-image: url('image/flower-god/product-group/product-group_3.jpg');
+    background-image: url('../image/flower-god/product-group/product-group_3.jpg');
     width: 16em;
     height: 23em;
     background-repeat: no-repeat;
@@ -194,7 +194,7 @@
 }
 
 .third:hover{
-    background-image: url('image/flower-god/product-no-bg/product-no-bg-3.png');
+    background-image: url('../image/flower-god/product-no-bg/product-no-bg-3.png');
     background-size:contain;
 }
 
@@ -239,7 +239,7 @@
 
 /* 頭牌榜-hover背景動態花邊*/
 .hot_product_bg{
-    background-image: url('image/flower_bg.svg');
+    background-image: url('../image/flower_bg.svg');
     background-size:0%;
     width: 16em;
     height: 23em;
@@ -318,7 +318,7 @@
 .products{
     width: 80%;
     margin: auto;
-    background-image: url(image/product_bg.svg);
+    background-image: url(../image/product_bg.svg);
     height:40em;
     background-repeat: no-repeat;
     background-position: top;
@@ -348,7 +348,7 @@
 
 /* 圓型窗戶 */
 .products_item::after{
-    content:url(image/window.svg);
+    content:url(../image/window.svg);
     width: 57%;
     filter: drop-shadow(#ffa5a6 3000px 0px);
     transform: translate(-3000px);
@@ -413,7 +413,7 @@
     }
 
     .festival_limited_wrap{
-        background-image: url(image/Border_bg_phone.svg);
+        background-image: url(../image/Border_bg_phone.svg);
         width: 90%;
         padding: 15% 5%;
     }
@@ -576,7 +576,7 @@
     .products{
         width: 100%;
         margin: auto;
-        background-image: url(image/product_bg_phone.svg);
+        background-image: url(../image/product_bg_phone.svg);
         height:40em;
         background-repeat: no-repeat;
         background-position: top;
