@@ -1,0 +1,314 @@
+@charset "UTF-8";
+
+/* === 關於香覓 === */
+/* 內容 */
+.container{
+    width: 100%;
+    padding: 0 6%;
+    margin: auto;
+}
+
+.about_us{
+    margin-top: 3em;
+    margin-bottom: 5em;
+}
+
+.about_us_txt{
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 4em;
+}
+
+.about_us h2{
+    text-align: center;
+    margin-bottom: 0.5em;
+}
+
+/* banner_slogan */
+.wave_animation{
+    margin-top: 2em;
+    margin-bottom: 2em;
+    object-fit: cover;
+    width:90%;
+    height:300px;
+    margin: auto;
+    background-image: url(/image/about/banner_slogan_web.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.banner_slogan{
+    width: 100%;
+}
+
+.banner_slogan img{
+    width: 100%;
+}
+
+
+/* === wave === */
+.waves {
+    width: 100%;
+    height:15vh;
+    min-height:100px;
+    max-height:150px;
+    position: relative;
+    top: 195px;
+    
+}
+
+/* 海浪動畫 */
+
+.parallax > use {
+    animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+}
+
+.parallax > use:nth-child(1) {
+    animation-delay: -2s;
+    animation-duration: 7s;
+}
+
+.parallax > use:nth-child(2) {
+    animation-delay: -3s;
+    animation-duration: 10s;
+}
+.parallax > use:nth-child(3) {
+    animation-delay: -4s;
+    animation-duration: 13s;
+}
+.parallax > use:nth-child(4) {
+    animation-delay: -5s;
+    animation-duration: 20s;
+}
+
+  @keyframes move-forever {
+    0% {
+     transform: translate3d(-90px,0,0);
+    }
+    100% { 
+      transform: translate3d(85px,0,0);
+    }
+  }
+
+
+/* 關於我們item部分 */
+.about_us_item{
+    width: 90%;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+/* item 交換 */
+.about_us_item:nth-child(even){
+    flex-direction: row-reverse;
+}
+
+.about_us_item_txt{
+    width: 40%;
+}
+
+.about_us_item h4{
+    text-align: center;
+}
+
+.about_us_item_img{
+    width:500px;
+    height: 300px;
+    overflow:hidden;
+  
+}
+
+.about_us_item_img img{
+    width: 100%;
+    object-fit: cover;
+
+}
+
+/* 水滴動畫 */
+.water_drop{
+    width: 20%;
+    z-index: 1;
+}
+
+.water{
+    background: #f4afa9;
+    width: 10%;
+    height: 9.5%;
+    position: absolute;
+    top: 317%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: url(#goo);
+    
+}
+
+.water::before {
+    content: "";
+    background: inherit;
+    width: 40%;
+    height: 40%;
+    position: absolute;
+    bottom:auto;
+}
+
+.drop {
+    background: inherit;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 50%;
+    bottom: 1700%;
+    border-radius: 0 50% 50%;
+    transform: translateX(-50%) rotate(45deg);
+    -webkit-animation: drop 2s ease-in infinite;
+    animation: drop 2s ease-in infinite;
+    
+}
+
+.drop:nth-child(1) {
+    width: 50px;
+    height: 50px;
+    -webkit-animation-delay: 0.1875s;
+    animation-delay: 0.1875s;
+}
+
+.drop:nth-child(2) {
+    width: 35px;
+    height: 35px;
+    -webkit-animation-delay: 0.375s;
+    animation-delay: 0.375s;
+}
+
+.drop:nth-child(3) {
+    width: 27px;
+    height: 27px;
+    -webkit-animation-delay: 0.5625s;
+    animation-delay: 0.5625s;
+}
+
+.drop:nth-child(4) {
+    width: 18px;
+    height: 18px;
+    -webkit-animation-delay: 0.75s;
+    animation-delay: 0.75s;
+}
+
+@-webkit-keyframes drop {
+    0% {
+        bottom: 1700%;
+    }
+    50% {
+        bottom:1000%;
+    }
+    100% {
+        bottom: 0;
+    }
+}
+  
+  @keyframes drop {
+    0% {
+        bottom: 1700%;
+    }
+    50% {
+        bottom:1000%;
+    }
+    100% {
+        bottom: 0;
+    }
+}
+
+.banner_perfume_bottle{
+    margin: auto;
+    position: relative;
+    width: 90%;
+    
+}
+
+
+
+.banner_logo{
+    width: 8%;
+    position: absolute;
+    top: 63%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.banner_perfume_img img{
+    width: 100%;
+}
+.banner_logo img{
+    width: 100%;
+}
+
+
+
+
+
+/*手機專用*/
+@media screen and (max-width: 767px){
+    .about_us{
+        margin-top: 2em;
+        margin-bottom: 5em;
+    }
+
+    .about_us_txt{
+        margin-bottom: 2em;
+    }
+
+    .banner_slogan{
+        width: 90%;
+        margin: auto;
+    }
+
+    .banner_slogan img{
+        width: 100%;
+    }
+    
+    .about_us_wrap{
+        width: 90%;
+        margin: auto;
+        text-align: center;
+    }
+
+    .about_us_item{
+        width: 100%;
+        display: inline-block;
+        text-align: center;
+        align-items: center;
+        margin: auto;
+        margin:1.5em 0;
+    }
+
+    .about_us_item_txt{
+        width: 100%;
+    }
+
+    .about_us_item_img{
+        width: 100%;
+        height:100%;
+        margin: 1em 0;
+      
+    }
+
+    .about_us_item_img img{
+        width: 100%;
+        object-fit: cover;
+        overflow: hidden;
+    }
+    
+    /* 水滴動畫消失 */
+    .water_drop{
+        display: none;
+    }
+
+    
+   
+}

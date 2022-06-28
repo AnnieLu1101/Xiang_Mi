@@ -1,0 +1,744 @@
+@charset "UTF-8";
+
+/* 通用設定 */
+* {
+    font-family: 'Shippori Mincho', serif !important;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url('../image/bg.jpg');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    margin: auto;
+}
+
+/* ===== 網頁/ RWD顯示 ===== */
+.web{
+    display: block;
+}
+
+.phone{
+    display: none;
+}
+
+/* ===== 顏色 ===== */
+/* --- 主色 --- */
+.primary_color {
+    
+}
+/* --- 輔色 --- */
+.secondary_color {
+
+}
+/* --- 強調色 --- */
+.accent_color {
+
+}
+
+/* ===== 按鈕 ===== */
+/* --- 主按鈕 --- */
+.primary_btn{
+    font-size: 16px;
+    letter-spacing: 2px;
+    display: inline-block;
+    text-align: center;
+    font-weight:600;
+    padding: 0.4em 2em;
+    border: 2.5px solid rgba(255, 132, 155, 0.9);
+    border-radius: 2px;
+    position: relative;
+    box-shadow: 0px 3px 6px 1px rgba(233, 34, 34, 0.5), 0 3px 6px rgba(95, 3, 3, 0.1);
+    color: #ffffff;
+    transition: 0.3s ease all;
+    z-index: 1;
+    background-color: rgba(247, 74, 105, 0.9);
+    cursor: pointer;
+    pointer-events:auto;
+}
+
+.primary_btn::before{
+    transition: 0.5s all ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: '';
+    background-color: #fde6e6;
+    z-index: -1;
+} 
+
+.primary_btn:hover, .primary_btn:focus {
+    color: rgb(236, 74, 104);
+}
+   
+.primary_btn:hover:before, .primary_btn:focus:before {
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+}
+   
+.primary_btn:active {
+    transform: scale(0.9);
+}
+
+/* --- 二級按鈕 --- */
+.secondary_btn{
+    background-color:#f5888a;
+    font-size: 16px;
+    font-weight:600;
+    padding: 0.4em 2em;
+    color: rgb(248, 248, 248);
+    letter-spacing: 2px;
+    cursor: pointer;
+    border-radius: 2px;
+    border: 2.5px solid #fba3a5;
+    box-shadow: rgba(233, 34, 34, 0.5) 0px 3px 6px 1px, rgba(95, 3, 3, 0.1) 0 3px 6px ;
+    transition: .3s;
+}
+
+.secondary_btn span:last-child {
+    display: none;
+}
+
+.secondary_btn:hover {
+    transition: .4s;
+    border: 2.5px solid rgba(255, 132, 155, 0.9);
+    background-color: rgba(247, 74, 105, 0.9);
+    color: #ffff;
+}
+
+.secondary_btn:active {
+    background-color:rgb(245, 142, 142);
+    border: 2.5px solid rgb(250, 169, 169);
+    transform: scale(0.9);
+}
+
+
+/* --- 三級按鈕 --- */
+.third_btn{
+    font-size: 16px;
+    letter-spacing: 2px;
+    display: inline-block;
+    text-align: center;
+    font-weight:bold;
+    padding: 0.4em 2em;
+    box-shadow: rgba(255, 89, 119, 0.5) 3px 3px 0px 0px /* spread */; 
+    border-radius: 2px;
+    color: rgb(234, 99, 124);
+    background-color: rgba(251, 206, 206, 0.5);
+    border: 2.5px solid rgb(234, 99, 124);
+    cursor: pointer;
+    pointer-events:auto;
+    margin-top: 1em;
+    white-space:nowrap;
+    transition: .3s;
+}
+
+.third_btn:hover{
+    box-shadow:rgba(255, 67, 102, 0.4) 3px 3px 0px 0px /* spread */,  rgba(252, 104, 132, 0.5) 3px 3px 2px 0px /* spread */ inset;
+    border: 2.5px solid rgb(252, 183, 196);
+    background-color:rgb(250, 169, 169,0.8);
+    color: rgb(251, 251, 251);
+}
+
+.third_btn:active{
+    transform: scale(0.9);
+}
+
+/* --- 其他按鈕 --- */
+.other_btn {
+
+}
+
+
+/* ===== 文字 ===== */
+h1 {
+    font-size: 3rem;
+    letter-spacing: 0.3rem;
+    line-height: 1.5;
+    color: #BF2132;
+    font-weight:700;
+
+}
+h2 {
+    font-size: 2.3rem;
+    letter-spacing: 0.2rem;
+    line-height: 1.5;
+    color:#BF2132;
+    font-weight:700;
+}
+h3 {
+    font-size: 1.9rem;
+    letter-spacing: 0.1rem;
+    line-height: 1.5;
+    color: #d82739;
+    font-weight:700; 
+}
+
+h4 {
+    font-size: 1.4rem;
+    letter-spacing: 0.05rem;
+    line-height: 1.5;
+    color: #d62e3f;
+    font-weight:700; 
+}
+
+h5 {
+    font-size: 1.2rem;
+    letter-spacing: 0.05rem;
+    line-height: 1.5;
+    color: #a21a28;
+    font-weight:600; 
+}
+
+p {
+    /* font-family:'Noto Sans TC', sans-serif !important; */
+    font-size: 1rem;
+    line-height: 1.5;
+    letter-spacing: 0.03rem;
+    color: #000;
+    font-weight:400;
+}
+
+
+/* ===== 頁首 ===== */
+
+/* === 標題樣式 === */
+.title_img{
+    width: 18em;
+    padding: 0 1.5em;
+ }
+ 
+ .title_img img{
+     width: 100%;
+ }
+ 
+ .tiltle{
+     display: flex;
+     justify-content: center;
+     white-space:nowrap;
+     align-items: center;
+ }
+ 
+ .web_tiltle{
+     display: block;
+ }
+ 
+ .phone_tiltle{
+     display: none;
+ }
+
+/* icon圖片靠右 */
+.icon{
+    width: 11em;
+    display: flex;
+    position:absolute;
+    right: 5em;
+    top: 1.5em;
+    background-color: #fbb9b9;
+    border-radius: 3em;
+    padding: 0.3em 1.4em;
+}
+
+.icon img:hover{
+    filter: drop-shadow(#bd0e42 2000px 0 0);
+    transform: translate(-2000px);
+}
+
+/* icon圖片中間間隔隔開 */
+.single{
+    margin: 0  0.2em;
+}
+
+.icon img{
+    width: 100%;
+}
+
+/* 導覽列 */
+
+.navbar{
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+#menu_check{
+    display: none;
+}
+
+.main_nav{
+    padding-top: 1.2em;
+}
+
+.main_nav li{
+    display: inline;
+}
+
+.main_nav a{
+    padding: 1em 1.5em;
+    margin-inline: 25px;
+    color: rgb(114, 38, 8);
+    font-size: 22px;
+    font-weight:600;
+    text-decoration: none;
+    text-align: center;
+}
+
+.main_nav a:hover{
+    color: #bd0e42;
+    font-weight:700;
+    text-shadow: 1px 1px #fff
+}
+ 
+/* === 當前頁面 === */
+.main_nav .now_page{
+    color: #bd0e42;
+    font-weight:700;
+    text-shadow: 1px 1px #fff
+}
+
+
+
+/* 電腦版漢堡logo消失 */
+.main_nav img{
+    display: none;
+}
+
+.main_nav li:nth-child(1){
+    display: none;
+}
+
+/* logo圖片 */
+.main_header{
+    width: 12%;
+    margin: auto;
+    margin-top: 8em;
+}
+
+.main_header img{
+    width: 100%;
+}
+
+/* 頁數 */
+.pages{
+    text-align: center;
+    margin-bottom: 2.5em;
+}
+
+.pages ul li{
+    display: inline;
+}
+
+.pages a{
+    text-decoration:none;
+    color: rgb(234, 99, 124);
+    font-size: 1.2em;
+    margin: 0.4em;
+    font-weight: 600;
+}
+
+.pages a:hover{
+    color: #BF2132;
+}
+
+
+
+
+/* ===== 頁尾 ===== */
+footer {
+    width: 100%;
+    background-color: rgba(236, 69, 102, 0.4);
+    padding: 3em 0 1.5em 0;
+    
+}
+
+/* === 當前頁面 === */
+.footer_main .now_page{
+    color: #bd0e42;
+    font-weight:700;
+}
+
+
+.footer_wrap{
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #fff;
+    padding: 1.5em 0;
+    
+}
+
+.footer_logo{
+    width: 10%;
+}
+
+.footer_logo img{
+    width: 100%;
+}
+
+.footer_main li{
+ padding: 0.5em 0;
+ 
+}
+
+.footer_main a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer_main a:hover{
+    color: #bd0e42;
+}
+
+.footer_icon{
+    width: 90%;
+    display: flex;
+    padding-top: 1em;
+    
+}
+
+.footer_icon img{
+    width: 100%;
+    padding:0 0.3em;
+}
+
+.social_media{
+    width: 12%;
+}
+
+.copy_right p{
+    width:100%;  
+    font-size: 0.9em;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+    
+}
+
+.copy_right a{
+    text-decoration: none;
+    color: rgb(255, 249, 249);
+    font-weight:400;
+    font-size: 1.1em;
+    
+}
+
+
+/* ===== 內容、章節 ===== */
+
+section{
+    padding-top: 4em;
+}
+
+.container{
+    width: 100%;
+    padding: 0 8.333333%;
+    margin: auto;
+}
+
+
+
+
+/* === 回到頂部按鈕 === */
+
+.back_to_top img{
+    position: absolute;
+    margin: auto;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.back_to_top p{
+    position: relative;
+    font-size: 0.8em;
+   
+}
+
+/* top箭頭 */
+.back_to_top::before{
+    content: url(/image/top.svg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size:contain;
+    width: 10%;
+    position: absolute;
+    margin: auto;
+    top:-190%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.back_to_top{
+    position: fixed;
+    width:10%;
+    right: 2em;
+    bottom: 0;
+    text-align: center;
+    margin:7em auto 5em;
+    animation: float 3s cubic-bezier(0.1, 0.1, 0.88, 0.88) infinite;
+    z-index: 1;
+    opacity: 1;
+    transition: opacity .5s 0s;
+    cursor: pointer;
+}
+
+/* 上下擺動動畫 */
+@keyframes float{
+    0% {
+        transform: translate(0, 0);
+    }
+    
+    30% {
+        transform: translate(0, -2px);
+    }
+    70% {
+        transform: translate(0, 5px);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+/* 回頂部按鈕隱藏 */
+.back_to_top_none{
+    opacity: 0;
+    transition: opacity .5s 0s;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*手機專用*/
+@media screen and (max-width: 767px){
+    /* ===== 網頁/ RWD顯示 ===== */
+    html{
+        font-size: 14px;
+    }
+
+    .web{
+        display: none;
+    }
+
+    .phone{
+        display: block;
+    }
+
+    /* ===== 內容、章節 ===== */
+    
+    /* 標題樣式 */
+    .title_img{
+        width: 8em;
+        padding: 0.5em ;
+     }
+
+    .web_tiltle{
+        display: none;
+    }
+
+    .phone_tiltle{
+        display: block;
+        
+    }
+
+    /* ===== 文字 ===== */
+    h1 {
+        font-size: 2.4rem;        
+    }
+
+    /* ===== 按鈕 ===== */
+    /* --- 主按鈕 --- */
+    .primary_btn{
+        letter-spacing: 1.7px;
+        padding: 0.4em 1.4em;
+    }
+
+    /* --- 二級按鈕 --- */
+    .secondary_btn{  
+        letter-spacing: 1.7px;
+        padding: 0.4em 1.4em;
+    }
+
+    /* --- 三級按鈕 --- */
+    .third_btn{
+        letter-spacing: 1.7px;
+        padding: 0.4em 1.4em;
+    }
+
+
+    /* ===== 頁首 ===== */
+    .icon{
+        display: none;
+    }
+
+    /* logo尺寸 */
+    .main_header{
+        width: 40%;
+        margin: auto;
+        margin-top:5em;
+    }
+    
+    /* 導覽列-漢堡*/
+    .hb{
+        width: 60px;
+        height: 60px;
+        border-radius: 50% ;
+        border: 1.5px solid rgb(114, 38, 8);
+        position: relative;
+        display:block;
+        margin-left: auto;
+        right: 0.9em;
+        top: 1em;
+        margin-top:-15em;
+        margin-bottom: 9em;
+        
+    }
+    
+    .hb:before,
+    .hb:after{
+        content: '';
+        position: absolute;
+        width: 50%;
+        height:3px;
+        background-color: rgb(114, 38, 8);
+        right: 0;
+        left: 0;
+        margin: auto;
+        transform: rotate(0deg);
+    }
+
+    .hb:before{
+        top: 16px;
+        box-shadow: 0px 11px 0px rgb(114, 38, 8);
+        transition: box-shadow .2s .5s,
+                    top        .2s .2s,
+                    transform  .2s 0s;
+    }
+
+    .hb:after{
+        bottom: 16px;
+        transition: bottom     .2s .2s,
+                    transform  .2s 0s;
+    }
+
+    #menu_check:checked ~ .navbar .hb:before{
+        top: 28px;
+        box-shadow: 0px 15px 0px #ff00;
+        transform: rotate(45deg);
+        transition: box-shadow .2s 0s,
+                    top        .2s .2s,
+                    transform  .2s .5s;
+    }
+
+    #menu_check:checked ~ .navbar .hb:after{
+        bottom: 26px;
+        transform: rotate(-45deg);
+        transition: bottom     .2s .2s,
+                    transform  .2s .5s;
+    }
+
+    .main_nav{
+        position: fixed;
+        width: 85%;
+        padding: 3em 0 8.5em 0;
+        top: 0em;
+        right: -90%;
+        opacity: 0;
+        background-color: rgba(242, 189, 189,0.96);
+        transition: opacity 1s, right 0s .9s;
+    }
+
+    #menu_check:checked ~ .navbar .main_nav{
+        right: 0;
+        opacity: 1;
+        transition: 1s;
+    }
+    
+    .main_nav a{
+        display: block;
+    }
+
+    /* 漢堡內logo尺寸 */
+    .main_nav img{
+        width: 5em;
+        display: inline-block;
+        
+    }
+
+    .main_nav li:nth-child(1){
+        display: block;
+    }
+
+    /* nav_icon */
+    .nav_icon img{
+       width: 2.5em;  
+       margin: 0 -1.5em;
+    }
+    
+    .nav_icon{
+        padding: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    /* 回到頂部按鈕 */
+    .back_to_top{
+        position: relative;
+        margin: auto;
+        width:5.6em;
+        font-weight: bold;
+        text-align: center;
+        margin: 2em auto 5em 13.2em;
+    }
+
+    .back_to_top::before{
+        width: 1em;
+        top: -190%;
+    }
+
+    .back_to_top p{
+        font-size: 0.9em;
+        font-weight: bold;
+    }
+    
+    
+
+    /* ===== 頁尾 ===== */
+    .footer_logo{
+        width: 20%;
+    }
+    
+    .footer_icon{
+        width: 100%;
+    }
+
+    .social_media{
+        width: 35%;
+    }
+
+    .copy_right p:nth-child(2){
+        display: none;
+    }
+
+    
+
+    
+
+    
+}

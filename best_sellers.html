@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>香覓XiangMi｜頭牌榜</title>
+	<!--瀏覽器頁籤logo icon-->
+	<link rel="shortcut icon" href="image/xiang_logo_ico.ico" type="image/png">
+	<!--描述和關鍵字-->
+	<meta name="description" content="專屬於你的中式香水">
+	<meta name="keyword" content="中式香水,香水,香調,十二月花神,花神,二十四節氣,節氣,送禮">
+	<!--font family-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400&family=Shippori+Mincho:wght@500;600;700;800&display=swap" rel="stylesheet">
+	<!--OwlCarousel-->
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<!--jquery-->
+	<script src="/js/jquery.js"></script>
+	<script src="/js/jquery.min.js"></script>
+	<!--AOS animation-->
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	<!--css-->
+	<link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/grid.css">
+	<link rel="stylesheet" href="css/best_sellers.css">
+	
+</head>
+
+<body>
+
+	<!--點按漢堡-->
+	<input type="checkbox" name="" id="menu_check">
+
+    <header>
+		<div class="main_header">
+			<!--icon圖示-->
+			<div class="icon">
+				<div class="single">
+			 		<a href="#"><img src="image/icon/magnifier.svg" alt="搜尋"></a>
+				</div>
+				<div class="single">
+			 		<a href="#"><img src="image/icon/login.svg" alt="會員登入"></a> 
+				</div>
+				<div class="single">
+			 		<a href="#"><img src="image/icon/Shopping.svg" alt="購買"></a>
+				</div>
+		   </div>
+		   <!--logo-->
+			<a href="index.html" class="logo">
+				<img src="image/xiang_logo.png" alt="xiang_logo">
+			</a>
+		</div>
+	</header>
+
+	<!--導覽列 -->
+    <div class="navbar">
+		<div class="main_nav_web">
+			<nav class="main_nav">
+				<ul>
+					<li><a href="index.html">
+						<img src="image/xiang_logo.png" alt="XiangMi_logo" >
+					</a></li>
+					<li><a href="best_sellers.html" class="now_page">頭牌榜</a></li>
+					<li><a href="shop.html">花露藏香閣</a></li>
+					<li><a href="gift.html">送禮</a></li>
+					<li><a href="about.html">關於香覓</a></li>
+					<li><a href="contact.html">聯絡我們</a></li>
+					<div class="nav_icon">
+						<a href="#"><img src="image/icon/Shopping-deep.svg" alt="購物車"></a>
+						<a href="#"><img src="image/icon/login-deep.svg" alt="會員登入"></a>
+					</div>
+				</ul>
+			</nav>
+		</div>
+
+		<!--漢堡-->
+		<label for="menu_check" class="hb"></label>
+    </div>
+
+	<!-- 內文開始  -->
+	<main>
+        <!-- 頭牌榜 -->
+        <section class="best_sellers">
+            <div class="container">
+				<!-- 商城標題 -->
+				<div class="tiltle">
+					<div class="title_img">
+						<img src="image/fiower_title_1.svg" alt="" class="web_tiltle">
+						<img src="image/fiower_title_phone_1.svg" alt="" class="phone_tiltle">
+					</div>
+					<h1>頭牌榜</h1>
+					<div class="title_img">
+						<img src="image/fiower_title_2.svg" alt="" class="web_tiltle">
+						<img src="image/fiower_title_phone_2.svg" alt="" class="phone_tiltle">
+					</div>
+				</div>
+				
+				<!--排行分類 點擊排行連結到指定div位置 -->
+				<div class="ranking_category">				
+					<div class="category" id="overall_cat">
+						<a href="#">
+							<img src="/image/category_bg.svg" alt="">
+						</a>								
+						<div class="category_txt">
+							<h4>暢銷排行</h4>
+						</div>						
+					</div>								
+					<div class="category" id="season_cat">
+						<a href="#">
+							<img src="/image/category_bg.svg" alt="">
+						</a>					
+						<div class="category_txt">
+							<h4>香伴四季</h4>
+						</div>
+					</div>					
+				</div>
+	
+				<!-- 暢銷排行 -->
+				<div class="overall_ranking_warp" id="overall_warp">
+					<h3>暢銷排行</h3>
+
+					<!-- 狀元 item -->
+					<div class="overall_item web" data-aos="fade-up" data-aos-duration="1500">
+						<div class="overall_pic col-12 col-md-4 window_shape">
+							<div class="hot_product_img">
+								<!-- 排名 -->
+								<div class="ranking">
+									<img src="/image/ranking_1.svg" alt="狀元">
+								</div>
+								<!-- hover產品背景動態花邊 -->
+								<div class="hot_product_bg web">
+									<div class="hot_product_img_web champion"></div>
+								</div>
+							</div>
+						</div>
+
+						<div class="overall_txt">
+							<h3>No.01</h3>
+							<h4>四月/牡丹/麗娟</h4>
+							<div class="txt">
+								<p>來自盛開牡丹嬌貴花香的魅力,香韻詮釋著牡丹盛開時的香氣,完美演繹牡丹,此般高貴花朵的豐腴嬌媚與千姿百態,散發奢華迷人氣息。<br>
+								前調：佛手柑<br>
+								中調：牡丹、玫瑰<br>
+								基調：白麝香</p>
+							</div>
+							<h5>NT$1,250</h5>
+							<a href="#"><button class="festival_btn secondary_btn">加入購物車</button></a>
+						</div>
+					</div>
+
+					<!-- 榜眼 item -->
+					<div class="overall_item web" data-aos="fade-up" data-aos-duration="1500">
+						<div class="overall_pic col-12 col-md-4 window_shape">
+							<div class="hot_product_img">
+								<!-- 排名 -->
+								<div class="ranking">
+									<img src="/image/ranking_2.svg" alt="狀元">
+								</div>
+								<!-- hover產品背景動態花邊 -->
+								<div class="hot_product_bg web">
+									<div class="hot_product_img_web second"></div>
+								</div>
+							</div>
+						</div>
+
+						<div class="overall_txt" id="second_txt">
+							<h3>No.02</h3>
+							<h4>九月/菊花/梁紅玉 </h4>
+							<div class="txt">
+								<p>清新的菊花香,帶來陽光般的青春活力,散發純粹的迷人風采,像是在菊花田嬉戲的少女,帶上一點點頑皮可愛,讓你沉浸在愉悅滿足的美妙感受中,特別柔美香甜。<br>
+								前調：晚香玉、菊花<br>
+								中調：依蘭依蘭、鳶尾根、橙花<br>
+								基調：晚香玉、茉莉、麝香</p>
+							</div>
+							<h5>NT$1,250</h5>
+							<a href="#"><button class="festival_btn secondary_btn">加入購物車</button></a>
+						</div>
+					</div>
+
+					<!-- 探花 item -->
+					<div class="overall_item web" data-aos="fade-up" data-aos-duration="1500">
+						<div class="overall_pic col-12 col-md-4 window_shape">
+							<div class="hot_product_img">
+								<!-- 排名 -->
+								<div class="ranking">
+									<img src="/image/ranking_3.svg" alt="狀元">
+								</div>
+								<!-- hover產品背景動態花邊 -->
+								<div class="hot_product_bg web">
+									<div class="hot_product_img_web third"></div>
+								</div>
+							</div>
+						</div>
+
+						<div class="overall_txt">
+							<h3>No.03</h3>
+							<h4>三月/桃花/戈小娥</h4>
+							<div class="txt">
+								<p>清新如朝露般的花香,散發出淡雅誘人的桃花氣息,給人輕柔美好的印象,像女孩青春可愛的柔嫩特質,讓妳不只散發甜美香息,同時展現迷人個性<br>
+								前調：檸檬、佛手柑<br>
+								中調：桃花、杏仁<br>
+								基調：西洋杉、麝香、鳶尾花</p>
+							</div>
+							<h5>NT$1,250</h5>
+							<a href="#"><button class="festival_btn secondary_btn">加入購物車</button></a>
+						</div>
+					</div>
+
+					<!-- 暢銷排行手機板 -->
+					<div class="overall_ranking_warp_phone phone">					
+						<!-- 狀元 item -->
+						<div class="overall_item_phone">
+							<div class="overall_pic_phone col-12 window_shape">
+								<!-- 排名 -->
+								<div class="ranking">
+									<img src="/image/ranking_1.svg" alt="狀元">
+								</div>
+								<img src="/image/flower-god/product-group/product-group_4.jpg" alt="頭牌榜-四月/牡丹/麗娟">
+							</div>
+
+							<div class="overall_txt_phone">
+								<h3>No.01</h3>
+								<h4>四月/牡丹/麗娟</h4>
+								<div class="txt">
+									<p>來自盛開牡丹嬌貴花香的魅力,香韻詮釋著牡丹盛開時的香氣,完美演繹牡丹,此般高貴花朵的豐腴嬌媚與千姿百態,散發奢華迷人氣息。<br>
+									前調：佛手柑<br>
+									中調：牡丹、玫瑰<br>
+									基調：白麝香</p>
+								</div>
+								<h4>NT$1,250</h4>
+								<a href="#"><button class="festival_btn secondary_btn">加入購物車</button></a>
+							</div>
+						</div>
+
+						<!-- 榜眼 item -->
+						<div class="overall_item_phone">
+							<div class="overall_pic_phone col-12 window_shape">
+								<!-- 排名 -->
+								<div class="ranking">
+									<img src="/image/ranking_1.svg" alt="狀元">
+								</div>
+								<img src="/image/flower-god/product-group/product-group_9.jpg" alt="頭牌榜-四月/牡丹/麗娟">
+							</div>
+
+							<div class="overall_txt_phone">
+								<h3>No.02</h3>
+								<h4>九月/菊花/梁紅玉</h4>
+								<div class="txt">
+									<p>清新的菊花香,帶來陽光般的青春活力,散發純粹的迷人風采,像是在菊花田嬉戲的少女,帶上一點點頑皮可愛,讓你沉浸在愉悅滿足的美妙感受中,特別柔美香甜。<br>
+									前調：晚香玉、菊花<br>
+									中調：依蘭依蘭、鳶尾根、橙花<br>
+									基調：晚香玉、茉莉、麝香</p>
+								</div>
+								<h5>NT$1,250</h5>
+								<a href="#"><button class="festival_btn secondary_btn">加入購物車</button></a>
+							</div>
+						</div>
+
+						<!-- 探花 item -->
+						<div class="overall_item_phone">
+							<div class="overall_pic_phone col-12 window_shape">
+								<!-- 排名 -->
+								<div class="ranking">
+									<img src="/image/ranking_1.svg" alt="狀元">
+								</div>
+								<img src="/image/flower-god/product-group/product-group_3.jpg" alt="頭牌榜-四月/牡丹/麗娟">
+							</div>
+
+							<div class="overall_txt_phone">
+								<h3>No.03</h3>
+								<h4>三月/桃花/戈小娥</h4>
+								<div class="txt">
+									<p>清新如朝露般的花香,散發出淡雅誘人的桃花氣息,給人輕柔美好的印象,像女孩青春可愛的柔嫩特質,讓妳不只散發甜美香息,同時展現迷人個性<br>
+									前調：檸檬、佛手柑<br>
+									中調：桃花、杏仁<br>
+									基調：西洋杉、麝香、鳶尾花</p>
+								</div>
+								<h5>NT$1,250</h5>
+								<a href="#"><button class="festival_btn secondary_btn">加入購物車</button></a>
+							</div>
+						</div>
+						
+
+						
+					</div>
+
+				</div>
+
+				<!-- 香伴四季 -->
+				<div class="season_ranking_warp" id="season_warp">
+					<h3>香伴四季</h3>
+					<div class="season_subject" data-aos="fade-down" data-aos-duration="1500">
+						<!-- 四季選單 -->
+						<ul class="menu_bar">
+							<li class="subject now_subject" id="link1">
+								<div class="baselink" onclick="opennumber('block1', this)" id="default_Open">
+										<img src="/image/circular_window_bg.svg" alt="">
+									<div class="subject_txt">
+										<h2>春</h2>
+									</div>
+								</div>  
+							</li>
+							<li class="subject" id="link2">
+								<div class="baselink" onclick="opennumber('block2', this)" >
+										<img src="/image/circular_window_bg.svg" alt="">
+									<div class="subject_txt">
+										<h2>夏</h2>
+									</div>
+								</div>  
+							</li>
+							<li class="subject" id="link3">
+								<div class="baselink" onclick="opennumber('block3', this)" >
+										<img src="/image/circular_window_bg.svg" alt="">
+									<div class="subject_txt">
+										<h2>秋</h2>
+									</div>
+								</div>  
+							</li>
+							<li class="subject" id="link4">
+								<div class="baselink" onclick="opennumber('block4', this)" >
+										<img src="/image/circular_window_bg.svg" alt="">
+									<div class="subject_txt">
+										<h2>冬</h2>
+									</div>
+								</div>  
+							</li>
+						</ul>
+					</div>
+					
+					<!-- 香伴四季div -->
+					<div class="season_recommend" data-aos="fade-up" data-aos-duration="1000">
+						<!-- 四季item 春-->
+						<div class="inner_block_area" id="block1">
+							<div class="inner_block">
+								<!-- 左邊區域 -->
+								<div class="left_area">
+									<h1>春</h1>
+									<p>春暖花開,鳥語花香,微風吹來浪漫的氣息;形容春天的詞彙裡,總是充滿百花齊放的景象,縈繞在四周是沁人的花香,伴隨著晨露及日光,在繁花芬芳中,獨讓人怦然心動。</p>
+									<div class="num_warp">
+										<div class="num_area">
+											<div class="num_txt">
+												<h4><span class="num">3</span></h4>
+												<div class="month"><h4>三月/桃花/戈小娥</h4></div>
+											</div>
+											<div class="line"></div>
+										</div>
+										<div class="num_area">
+											<div class="num_txt">
+												<h4><span class="num">4</span></h4>
+												<div class="month"><h4>四月/牡丹/麗娟</h4></div>
+											</div>
+											<div class="line"></div>
+										</div>
+										<div class="num_area">
+											<div class="num_txt">
+												<h4><span class="num">5</span></h4>
+												<div class="month"><h4>五月/石榴/公孫氏</h4></div>
+											</div>
+											<div class="line"></div>
+										</div>
+									</div>
+								</div>
+								<!-- 右邊區域 -->
+								<div class="right_area">
+									<h3>春季推薦</h3>
+									<div class="right_area_pic">
+										<img src="/image/flower-god/product-group/product-group_3.jpg" alt="">
+									</div>
+									<h4>三月/桃花/戈小娥</h4>
+									<a href="#"><button class="festival_btn secondary_btn">加入購物車</button></a>
+								</div>
+							</div>
+						</div>
+						<!-- 四季item 夏-->
+						<div class="inner_block_area" id="block2">
+							<div class="inner_block">
+								<!-- 左邊區域 -->
+								<div class="left_area">
+									<h1>夏</h1>
+									<p>在酷熱的夏日,噴上屬於夏季清爽的花香；然而夏季的雨是多麼的悶熱難耐,當夜晚來臨,熱浪被雨水一絲絲抽走,終於使涼意一點點滲透,芳香隨之而來,伴著夏日夜風,成就了難忘的夏日回憶。</p>
+									<div class="num_warp">
+										<div class="num_area">
+											<div class="num_txt">
+												<h4><span class="num">6</span></h4>
+												<div class="month"><h4>六月/蓮花/西施</h4></div>
+											</div>
+											<div class="line"></div>
+										</div>
+										<div class="num_area">
+											<div class="num_txt">
+												<h4><span class="num">7</span></h4>
+												<div class="month"><h4>七月/玉簪花/李夫人</h4></div>
+											</div>
+											<div class="line"></div>
+										</div>
+										<div class="num_area">
+											<div class="num_txt">
+												<h4><span class="num">8</span></h4>
+												<div class="month"><h4>八月/桂花/綠珠</h4></div>
+											</div>
+											<div class="line"></div>
+										</div>
+									</div>
+								</div>
+								<!-- 右邊區域 -->
+								<div class="right_area">
+									<h3>夏季推薦</h3>
+									<div class="right_area_pic">
+										<img src="/image/flower-god/product-group/product-group_8.jpg" alt="">
+									</div>
+									<h4>八月/桂花/綠珠</h4>
+									<a href="#"><button class="festival_btn secondary_btn">加入購物車</button></a>
+								</div>
+							</div>
+						</div>
+						<!-- 四季item 秋-->
+						<div class="inner_block_area" id="block3">
+							<div class="inner_block">
+								<!-- 左邊區域 -->
+								<div class="left_area">
+									<h1>秋</h1>
+									<p>秋風徐來,濃濃秋意似薄紗般的籠罩著大地,四季皆有獨有的香氣,唯獨秋季的味道是包容萬象卻又鮮明突出的,雅緻的花香,在季節的末梢綻放出春花秋實的美麗,就像你我相遇在秋天裡。</p>
+									<div class="num_warp">
+										<div class="num_area">
+											<div class="num_txt">
+												<h4><span class="num">9</span></h4>
+												<div class="month"><h4>九月/菊花/梁紅玉</h4></div>
+											</div>
+											<div class="line"></div>
+										</div>
+										<div class="num_area">
+											<div class="num_txt">
+												<h4><span class="num">10</span></h4>
+												<div class="month"><h4>十月/芙蓉/貂蟬</h4></div>
+											</div>
+											<div class="line"></div>
+										</div>
+										<div class="num_area">
+											<div class="num_txt">
+												<h4><span class="num">11</span></h4>
+												<div class="month"><h4>十一月/山茶花/王昭君</h4></div>
+											</div>
+											<div class="line"></div>
+										</div>
+									</div>
+								</div>
+								<!-- 右邊區域 -->
+								<div class="right_area">
+									<h3>秋季推薦</h3>
+									<div class="right_area_pic">
+										<img src="/image/flower-god/product-group/product-group_11.jpg" alt="">
+									</div>
+									<h4>十一月/山茶花/王昭君</h4>
+									<a href="#"><button class="festival_btn secondary_btn">加入購物車</button></a>
+								</div>
+							</div>
+						</div>
+						<!-- 四季item 冬-->
+						<div class="inner_block_area" id="block4">
+							<div class="inner_block">
+								<!-- 左邊區域 -->
+								<div class="left_area">
+									<h1>冬</h1>
+									<p>寒風凜冽,冬日和煦的暖陽是最迷人的,如同冬日暖調香一般,沉穩又帶有馥郁溫暖的香氣融為一體,讓人沉醉其中,氣味蔓延在寒冬中持續發酵,像與戀人擁抱般,感受著彼此炙熱的溫度一樣令人著迷。</p>
+									<div class="num_warp">
+										<div class="num_area">
+											<div class="num_txt">
+												<h4><span class="num">12</span></h4>
+												<div class="month"><h4>十二月/水仙/甄宓</h4></div>
+											</div>
+											<div class="line"></div>
+										</div>
+										<div class="num_area">
+											<div class="num_txt">
+												<h4><span class="num">1</span></h4>
+												<div class="month"><h4>一月/梅花/江采蘋</h4></div>
+											</div>
+											<div class="line"></div>
+										</div>
+										<div class="num_area">
+											<div class="num_txt">
+												<h4><span class="num">2</span></h4>
+												<div class="month"><h4>二月/杏花/楊玉環</h4></div>
+											</div>
+											<div class="line"></div>
+										</div>
+									</div>
+								</div>
+								<!-- 右邊區域 -->
+								<div class="right_area">
+									<h3>冬季推薦</h3>
+									<div class="right_area_pic">
+										<img src="/image/flower-god/product-group/product-group_1.jpg" alt="">
+									</div>
+									<h4>一月/梅花/江采蘋</h4>
+									<a href="#"><button class="festival_btn secondary_btn">加入購物車</button></a>
+								</div>
+							</div>
+						</div>					
+					</div>
+				</div>
+			</div>
+        </section>
+
+
+		<!-- 回頂部按鈕 -->
+		<div class="back_to_top back_to_top_none" id="back_to_top">
+			<a onclick="topFunction()" id="back_to_top_btn">
+				<img src="/image/flower_circle.svg" alt="回到頂部">
+				<p>TOP</p>
+			</a>
+		</div>
+		<!-- 回頂部按鈕 -->	
+
+	</main>
+	
+	<footer>
+		<div class="footer_wrap">
+			<div class="footer_logo">
+				<a href="index.html">
+					<img src="image/xiang_logo_white.png" alt="XiangMi_logo" >
+				</a>
+			</div>
+			<div class="footer_main">
+				<ul>
+					<li><a href="best_sellers.html" class="now_page">頭牌榜</a></li>
+					<li><a href="shop.html">花露藏香閣</a></li>
+					<li><a href="gift.html">送禮</a></li>
+					<li><a href="about.html">關於香覓</a></li>
+					<li><a href="contact.html">聯絡我們</a></li>
+				</ul>
+			</div>
+			<div class="social_media">
+				追蹤香覓
+				<div class="footer_icon">
+					<a href="#"><img src="/image/icon/footer_icon_fb.svg" alt=""></a>
+					<a href="#"><img src="/image/icon/footer_icon_ig.svg" alt=""></a>
+					<a href="#"><img src="/image/icon/footer_icon_yt.svg" alt=""></a>
+				</div>
+			</div>
+			
+		</div>
+		<div class="copy_right">
+			<p>
+			© 2022 Powered by XiangMi Right Reserved.<br>
+			本網站為緯育TibaMe前端工程師第73期學員專題作品,僅供學習、展示之用。<br>
+			</p>
+			<p>
+			若有侵權疑慮，請私訊<a href="https://www.tibame.com/goodjob/frontend">【TibaMe-前端設計工程師養成班】</a>，後續由專人協助處理。
+			</p>
+		</div>
+		
+	</footer>
+
+<!--AOS animation-->
+<script>
+	AOS.init();
+</script>
+<!--OwlCarousel-->	
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<!--js-->
+<script src="js/common.js"></script>
+<script src="js/best_sellers.js"></script>
+
+</body>
+</html>

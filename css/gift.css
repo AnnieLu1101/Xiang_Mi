@@ -1,0 +1,114 @@
+@charset "UTF-8";
+
+/* === 關於香覓 === */
+/* 內容 */
+.container{
+    width: 100%;
+    padding: 0 6%;
+}
+
+.gift{
+    text-align: center;
+    margin-top: 3em;
+    margin-bottom: 5em;
+}
+
+.season_gift{
+    margin-top: 3em;
+    margin-bottom: 2em;
+	
+}
+
+.gift_card{
+    margin:0 2.5em;
+    margin-top: 2.5em;
+}
+
+.gift_warp{
+    width: 100%;
+    margin: auto;
+	
+}
+
+.gift_pic{
+	width: 22.5em;
+	height: 22.5em;
+	position: relative;
+	overflow: hidden;
+}
+
+.gift_pic::before{
+	content: "";
+	display: block;
+	position: relative;
+	top:0;
+	width: 100%;
+	height: 0;
+	padding-bottom: 75%;
+}
+.gift_pic img{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 50%;
+	left:50%;
+	object-fit: cover;
+	object-position: center bottom;
+	transition: 0.5s;
+	transform: translate(-50%,-50%);
+}
+.gift_pic:hover img{
+	width: 110%;
+	height: 110%;
+}
+
+.gift_txt{
+	margin-top: 0.8em;
+}
+
+.gift_txt h5{
+	margin-top: 0.4em;
+}
+
+.gift_txt>h6{
+	margin-top: 0.1em;
+	font-size: 1.1rem;
+    letter-spacing: 0.05rem;
+    line-height: 1.5;
+    color: #d62e3f;
+    font-weight:600; 
+}
+
+
+
+
+
+
+/*手機專用*/
+@media screen and (max-width: 767px){
+
+	.gift_tiltle_txt{
+		width: 80%;
+		text-align: center;
+		margin: auto;
+	}
+
+	.gift_card{
+		margin: auto;
+		padding: 1.3em 0;
+	}
+
+	.gift_giving{
+		padding-bottom: 1.5em;
+	}
+
+	
+
+
+
+   
+    
+
+    
+    
+}
