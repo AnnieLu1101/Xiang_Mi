@@ -466,7 +466,7 @@ section{
 
 /* top箭頭 */
 .back_to_top::before{
-    content: url(image/top.svg);
+    content: url(../image/top.svg);
     background-repeat: no-repeat;
     background-position: top;
     background-size:contain;
